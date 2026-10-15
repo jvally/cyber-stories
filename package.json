@@ -1,0 +1,21 @@
+{
+  "name": "cyber-stories-bot",
+  "version": "1.0.0",
+  "description": "Telegram to GitHub daily log bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@octokit/core": "^7.0.8",
+    "node-telegram-bot-api": "^0.67.0"
+  },
+  "devDependencies": {
+    "dotenv": "^18.0.8"
+  }
+}
