@@ -1,0 +1,31 @@
+name: Telegram log
+
+on:
+  schedule:
+    # Every 6 hours. For every 4 hours use '0 */4 * * *'.
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: telegram-log
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  log:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: node index.js
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN || secrets.GITHUB_TOKEN }}
+          ALLOWED_USER_ID: ${{ secrets.ALLOWED_USER_ID }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
