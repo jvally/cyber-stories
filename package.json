@@ -1,7 +1,7 @@
 {
   "name": "cyber-stories-bot",
   "version": "1.0.0",
-  "description": "Telegram to GitHub daily log bot",
+  "description": "Log Telegram messages to a daily markdown file in a GitHub repo",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
