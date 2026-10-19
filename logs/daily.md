@@ -7,3 +7,7 @@
 ## 2026-10-18
 
 - [2026-10-18 15:38] Todays learning: 1) Learnt about the mechanisms used in link layer for error detection, transmitting(random access protocol, turn-based and channel partitioning protocols) 2) Completed a room in tryhackme about basic cryptography involving symmetric/assymmetric encryption, rsa, diffle-hellman, ssh, digitial signatures & certificates,  pgp & gpg
+
+## 2026-10-19
+
+- [2026-10-19 18:09] Todays learning:
