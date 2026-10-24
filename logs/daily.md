@@ -19,3 +19,7 @@
 
 - [2026-10-23 17:34] Find more about pass the hash and how it works
 - [2026-10-23 17:42] Learnt more about how to use John the Ripper inside the Tryhackme room and how to use John hte Rippe rbetter
+
+## 2026-10-24
+
+- [2026-10-24 03:45] So tdy i finaly tried a first room to test what i learnt from teh john the ripper room , it took q long cos sometimes the bcrypt rly takes damn long
